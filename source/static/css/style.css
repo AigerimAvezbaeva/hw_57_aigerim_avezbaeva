@@ -1,0 +1,28 @@
+.big-card{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    margin: 20px;
+}
+.small-card{
+    width: 50%;
+}
+.card-text{
+    padding: 20px;
+}
+.card-head{
+    display: flex;
+    width: 100%
+}
+.title{
+    padding: 15px 15px 0;
+    width: 50%
+}
+
+.form_row{
+    display:flex;
+}
+.btn{
+    height: 38px;
+}
