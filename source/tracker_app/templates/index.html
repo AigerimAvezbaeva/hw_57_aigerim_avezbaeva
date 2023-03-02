@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+HOME
+{% endblock %}
+{% block menu %}
+    <a class="nav-link active" aria-current="page" href="{% url 'add_issue' %}">Add Task/Issue </a>
+{% endblock %}
+{% block content %}
+<div class="container">
+
+    {% for issue in issues %}
+    <div class="card">
+        <h3>Задача: {{ issue.summary }}</h3>
+        <h5>Статус: {{ issue.status }}</h5>
+        <h5>Тип задачи: {{ issue.status }}</h5>
+        <p><a href="{% url 'issue_detail' issue.pk %}">Подробнее..</a></p>
+    </div>
+    {%endfor%}
+{% endblock %}
